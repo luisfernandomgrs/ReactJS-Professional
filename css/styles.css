@@ -18,6 +18,22 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+/*  --------------------------------------------------------------------------
+    Generic Styles
+*/
+.dsc-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+
+/*  --------------------------------------------------------------------------
+    Header Styles
+*/
 header {
     background-color: var(--dsc-color-bg-secondary);
     height: 70px;
@@ -32,12 +48,18 @@ nav {
     align-items: center;
 }
 
-.dsc-container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+nav h1 {
+    font-size: 24px;
 }
 
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*  --------------------------------------------------------------------------
+    Card Styles
+*/
 .dsc-card {
     border: 1px solid var(--dsc-color-card-border);
     border-radius: 8px;
@@ -48,6 +70,9 @@ nav {
     border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
+/*  --------------------------------------------------------------------------
+    Button Styles
+*/
 .dsc-btn {
     border-radius: 5px;
     height: 42px;
@@ -73,8 +98,4 @@ nav {
     border: 1px solid var(--dsc-color-btn-primary);
     background: var(--dsc-color-btn-inverse);
     color: var(--dsc-color-btn-primary);
-}
-
-.dsc-mb20 {
-    margin-bottom: 20px;
 }
