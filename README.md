@@ -9,5 +9,4 @@ by support of school for developers DevSuperior
 ```
 
 ## Showing what are happening with this project
-![image](https://github.com/user-attachments/assets/8650d461-fb2f-4b7f-ad6a-e524ccfe129f)
-
+![image](https://github.com/user-attachments/assets/8f24fe38-d627-472b-b7e3-e117a48d0ce7)
