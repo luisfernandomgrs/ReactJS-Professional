@@ -1,0 +1,46 @@
+@import url(./variables.css);
+
+#catalog-section {
+    padding: 20px 0;
+}
+
+.dsc-catalog-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    background-color: var(--dsc-color-bg-primary);
+}
+
+.dsc-catalog-card-top {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dsc-catalog-card-top img {
+    width: 150px;
+    height: 150px;
+}
+
+.div-repeated {
+    background-color: var(--dsc-color-font-tertiary);
+}
+
+.dsc-catalog-card-bottom {
+    padding: 10px 20px;
+    min-height: 110px;
+}
+
+.dsc-catalog-card-bottom h3 {
+    color: var(--dsc-color-font-secondary);
+    font-size: 20px;
+}
+
+.dsc-catalog-card-bottom h4 {
+    color: var(--dsc-color-font-primary);
+    font-size: 12px;
+}
+
+.dsc-btn-next-page {
+    margin-bottom: 20px;
+}
