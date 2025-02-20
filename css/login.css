@@ -1,0 +1,27 @@
+@import url(./variables.css);
+
+#login-section {
+    padding: 20px 0;
+}
+
+.dsc-login-form-container {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.dsc-input-error {
+    border: 1px solid var(--dsc-color-error);
+}
+
+.dsc-form-error {
+    color: var(--dsc-color-error);
+    padding-left: 4px;
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    #login-section {
+        padding: 40px 0;
+    }
+}
