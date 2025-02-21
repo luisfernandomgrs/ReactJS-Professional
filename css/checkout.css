@@ -1,0 +1,19 @@
+@import url(./variables.css);
+
+#checkout-section {
+    padding: 20px 0;
+}
+
+.dsc-checkout-message {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dsc-color-font-primary);
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .dsc-checkout-message {
+        font-size: 24px;
+        text-align: left;
+    }
+}
