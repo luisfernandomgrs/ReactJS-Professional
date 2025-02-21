@@ -1,12 +1,13 @@
 @import url(./variables.css);
 
-#login-section {
+#product-section {
     padding: 20px 0;
 }
 
-.dsc-login-form-container {
+.dsc-product-form-container {
     width: 100%;
-    max-width: 360px;
+    max-width: 640px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
@@ -21,13 +22,16 @@
 }
 
 @media (min-width: 576px) {
-    #login-section {
+    #product-section {
         padding: 40px 0;
     }
 }
 
-.dsc-form-login-button {
+.dsc-form-product-button {
     width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
 }
 
 @media (min-width: 576px) {

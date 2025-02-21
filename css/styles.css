@@ -222,13 +222,3 @@ nav a {
 .dsc-form-control::placeholder {
     color: var(--dsc-color-font-placeholder);
 }
-
-.dsc-form-login-button {
-    width: 100%;
-}
-
-@media (min-width: 576px) {
-    .dsc-form h2 {
-        font-size: 24px;
-    }    
-}
