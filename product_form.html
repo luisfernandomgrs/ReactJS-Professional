@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product_form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="dsc-container">
+            <h1>Big Store</h1>
+            <div class="dsc-logged-user">
+                <p>Luis Fernando</p>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-section" class="dsc-container">
+            <div class="dsc-product-form-container">
+                <form class="dsc-card dsc-form dsc-form textarea">
+                    <h2>Product Detail</h2>
+                    <div class="dsc-form-controls-container">
+                        <div>
+                            <input class="dsc-form-control dsc-input-error" type="text" placeholder="Description">
+                        </div>
+                        <div>
+                            <input class="dsc-form-control dsc-input-error" type="text" placeholder="Price">
+                        </div>
+                        <div>
+                            <input class="dsc-form-control dsc-input-error" type="text" placeholder="Product image">
+                        </div>
+                        <div>
+                            <select class="dsc-form-control dsc-selected" required>
+                                <option value="" disabled selected>Product category</option>
+                                <option value="1">Tecnologic</option>
+                                <option value="2">Dress</option>
+                                <option value="3">Cosmetic</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea class="dsc-form-control" placeholder="Long description"></textarea>
+                        </div>
+                    </div>
+                    <div class="dsc-form-product-button">
+                        <button class="dsc-btn dsc-btn-white" type="reset">Cancel</button>
+                        <button class="dsc-btn dsc-btn-blue" type="submit">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

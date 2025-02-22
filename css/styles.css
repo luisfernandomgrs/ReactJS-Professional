@@ -198,6 +198,24 @@ nav a {
     text-align: center;
 }
 
+.dsc-form-error {
+    color: var(--dsc-color-error);
+    padding-left: 4px;
+    font-size: 12px;
+}
+
+.dsc-selected:invalid {
+    color: var(--dsc-color-font-placeholder);
+}
+
+.dsc-selected option[disabled] {
+    color: var(--dsc-color-font-placeholder);
+}
+
+.dsc-selected option {
+    color: var(--dsc-color-font-primary);
+}
+
 .dsc-form-controls-container {
     width: 100%;
     display: grid;
