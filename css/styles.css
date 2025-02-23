@@ -35,6 +35,17 @@ main {
     margin-bottom: 20px;
 }
 
+.dsc-section-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dsc-color-font-primary);
+}
+
+.dsc-text-left {
+    text-align: left;
+}
+
 /*  --------------------------------------------------------------------------
     Header Styles
 */
@@ -239,4 +250,33 @@ nav a {
 
 .dsc-form-control::placeholder {
     color: var(--dsc-color-font-placeholder);
+}
+
+/*  --------------------------------------------------------------------------
+    Table Styles
+*/
+
+.dsc-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsc-table thead {
+    height: 55px;
+    font-size: 14px;
+    color: var(--dsc-color-font-primary);
+    background-color: var(--dsc-color-card-bg);
+}
+
+.dsc-table tbody {
+    text-align: center;
+    color: var(--dsc-color-font-primary);
+    font-size: 12px;
+    background-color: var(--dsc-color-card-bg);
+}
+
+.dsc-table tbody tr {
+    height: 70px;
+    border-top: 1px solid var(--dsc-color-card-border);
 }

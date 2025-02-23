@@ -1,0 +1,28 @@
+@import url(./variables.css);
+
+#product-listing-section {
+    padding: 20px 0;
+}
+
+.dsc-btn-title {
+    border: 1px solid var(--dsc-color-btn-primary);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dsc-product-listing-img-prod {
+    height: 69px;
+    width: 69px;
+}
+
+.dsc-product-listing-btn {
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    align-items: center;
+    margin: 0 7px;
+}

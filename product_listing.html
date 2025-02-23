@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product_listing.css">
+</head>
+
+<body>
+    <header>
+        <nav class="dsc-container">
+            <h1>Big Store</h1>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="product-listing-section" class="dsc-container">
+            <h2 class="dsc-section-title dsc-mb20">Product registration</h2>
+            
+            <div class="dsc-btn-page-container dsc-mb20">
+                <div class="dsc-btn dsc-btn-white">New Product</div>
+            </div>
+
+            <form class="dsc-search-bar">
+                <button type="submit">🔎︎</button>
+                <input type="text" placeholder="Product name" />
+                <button type="reset">🗙</button>
+            </form>
+
+            <table class="dsc-table">
+                <thead>
+                    <th>ID</th>
+                    <th></th>
+                    <th>Price</th>
+                    <th class="dsc-text-left">Description</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody class="dsc-product-listing-tbody"></tbody>
+            </table>
+
+            <div class="dsc-catalog-cards dsc-mb20"></div>
+
+            <div class="dsc-btn-next-page">
+                show more itens
+            </div>
+        </section>
+
+        <script>
+            let initializeAt = 341;
+            const numDivs = 8;
+            const container = document.querySelector(`.dsc-product-listing-tbody`);
+            
+            for (let i = initializeAt; i < (initializeAt + numDivs); i++) {
+                const newDivToRepeat = document.createElement(`tr`);
+                
+                newDivToRepeat.innerHTML = `
+                                            <td>` + i + `</td>
+                                            <td><img class="dsc-product-listing-img-prod" src="./images/computer.png" alt="Computer"></td>
+                                            <td>U$$ 985.00</td>
+                                            <td class="dsc-text-left">Computador Gamer XT Plus Ultra</td>
+                                            <td><img class="dsc-product-listing-btn" src="./images/edit.svg" alt="Edit"></td>
+                                            <td><img class="dsc-product-listing-btn" src="./images/delete.svg" alt="Delete"></td>
+                                        `;
+
+                container.appendChild(newDivToRepeat);
+            }
+        </script>
+    </main>
+</body>
+                            
+</html>
