@@ -11,9 +11,22 @@
 
 <body>
     <header>
-        <nav class="dsc-container">
+        <nav class="dsc-container dsc-container-admin">
             <h1>Big Store</h1>
-            <a href="#">Login</a>
+            <div class="nav-bar-right">
+                <div class="dsc-menu-items-container">
+                    <div class="dsc-menu-item">
+                        <img src="./images/settings.svg" alt="Admin">
+                    </div>
+                    <div class="dsc-menu-item">
+                        <img src="./images/cart.svg" alt="Checkout">
+                    </div>
+                </div>
+                <div class="dsc-logged-user">
+                    <p>Luis Fernando</p>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -32,9 +45,9 @@
 
             <table class="dsc-table">
                 <thead>
-                    <th>ID</th>
+                    <th class="dsc-bootstrap-576">ID</th>
                     <th></th>
-                    <th>Price</th>
+                    <th class="dsc-bootstrap-768">Price</th>
                     <th class="dsc-text-left">Description</th>
                     <th></th>
                     <th></th>
@@ -51,16 +64,16 @@
 
         <script>
             let initializeAt = 341;
-            const numDivs = 8;
+            const numDivs = 7;
             const container = document.querySelector(`.dsc-product-listing-tbody`);
             
             for (let i = initializeAt; i < (initializeAt + numDivs); i++) {
                 const newDivToRepeat = document.createElement(`tr`);
                 
                 newDivToRepeat.innerHTML = `
-                                            <td>` + i + `</td>
+                                            <td class="dsc-bootstrap-576">` + i + `</td>
                                             <td><img class="dsc-product-listing-img-prod" src="./images/computer.png" alt="Computer"></td>
-                                            <td>U$$ 985.00</td>
+                                            <td class="dsc-bootstrap-768">U$$ 985.00</td>
                                             <td class="dsc-text-left">Computador Gamer XT Plus Ultra</td>
                                             <td><img class="dsc-product-listing-btn" src="./images/edit.svg" alt="Edit"></td>
                                             <td><img class="dsc-product-listing-btn" src="./images/delete.svg" alt="Delete"></td>
