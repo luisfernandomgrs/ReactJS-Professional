@@ -11,13 +11,25 @@
 </head>
 
 <body>
-    <header>
+    <header class="ds-header-client">
         <nav class="dsc-container">
-            <h1>Big Store</h1>
-            <div class="dsc-logged-user">
-                <p>Luis Fernando</p>
-                <a href="#">Logout</a>
-            </div>
+            <nav class="dsc-container dsc-container-admin dsc-nav-client">
+                <h1>Big Store</h1>
+                <div class="nav-bar-right">
+                    <div class="dsc-menu-items-container">
+                        <div class="dsc-menu-item">
+                            <img src="./images/settings.svg" alt="Admin">
+                        </div>
+                        <div class="dsc-menu-item">
+                            <img src="./images/cart.svg" alt="Checkout">
+                        </div>
+                    </div>
+                    <div class="dsc-logged-user">
+                        <p>Luis Fernando</p>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </nav>
         </nav>
     </header>
     <main>
